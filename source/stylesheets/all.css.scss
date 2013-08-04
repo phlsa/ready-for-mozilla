@@ -169,10 +169,11 @@ nav {
 .reasons {
   @include background-image( linear-gradient( to bottom, #630300, #ff6d16 ) );
   color: #fff;
-  padding: 8em 0;
+  padding: 4em 0;
   margin-top: -250px;
   border-top: 1px solid rgba(255,255,255,0.5);
   border-radius: 22px;
+  max-width: 800px;
 
   .five {
     width: 160px;
@@ -201,7 +202,7 @@ nav {
   }
 
   .page {
-    margin-top: 80px;
+    margin-top: 30px;
     ol {
       @include span-columns( 8, 12 );
       @include prefix( 2 );
