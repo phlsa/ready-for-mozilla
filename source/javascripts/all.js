@@ -10,7 +10,7 @@ $( document ).ready( function() {
 		}
 	});
 
-	$('nav a').click( function( e ) {
+	$('nav a, .navlink').click( function( e ) {
 		e.preventDefault();
 		var h = e.currentTarget.href;
 		var hash = h.substring( h.indexOf('#')+1, h.length );
@@ -19,5 +19,12 @@ $( document ).ready( function() {
 		setTimeout( function() {
 			window.location.hash = "#"+hash;
 		}, 1000);
+	});
+
+	$('.gallery img').on('mouseover', function( e ) {
+		var g = $(e.currentTarget).closest('.gallery').attr('data-gallery');
+		var url = $(e.currentTarget).attr('src');
+		$('img[data-gallery='+g+']').attr( 'src', url );
+		console.log( $('img[data-gallery="'+g+'""]') );
 	});
 });

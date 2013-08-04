@@ -4,17 +4,13 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 
 <header class="intro">
 	<div class="page">
+		<a href="http://readyformozilla.com"><i class="icon-chevron-sign-left"></i> Back to my Resumé</a>
 		<h1>Rethinking Panorama</h1>
 		<p class="huge">
-			Panorama (or tab groups) is a great feature. Whenever I tell someone about it, people love the idea.<br>
-			But I think it can get even better. Let me show you how.
+			Panorama (a.k.a. tab groups) is a great feature. Whenever I tell someone about it, people love the idea.<br>
+			<strong>But I think it can get even better.<br> Let me show you how.</strong>
 		</p>
-		<div class="half">
-			Hey Mozilla, I want to work for you!
-		</div>
-		<div class="half">
-			Straight to the result, please.
-		</div>
+		<a class="btn" href="#prototype" class="navlink"><i class="icon-chevron-sign-down"></i> <span>Straight to the result, please.</span></a>
 	</div>
 </header>
 
@@ -23,8 +19,9 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 		<a href="#process">Process</a>
 		<a href="#use-cases">Use Cases</a>
 		<a href="#goals">Goals</a>
-		<a href="#proposal">Proposal</a>
-		<a href="#future">Future</a>
+		<a href="#sketches">Sketches</a>
+		<a href="#wireframes">Wireframes</a>
+		<a href="#prototype">Prototype</a>
 	</div>
 </nav>
 
@@ -83,10 +80,14 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 <section class="use-cases">
 	<div class="page">
 		<h2>Use Cases:<br> Building the right thing</h2>
-		<img src="../images/use-cases.png">
-		<p class="huge">
+		<div class="quarter">
+			<img src="../images/use-cases.png">
+		</div>
+		<p class="huge side">
 			What do people actually use or want to use panorama for? Researching forums, Bugzilla, Telemetry and questioning some people around me, I have identified these use cases.
 		</p>
+	</div>
+	<div class="page">
 		<div class="third">
 			<h3>Organize huge amounts of tabs</h3>
 			<p>
@@ -114,13 +115,17 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 </section>
 
 <a name="goals"></a>
-<section class="goals">
+<section class="sketches">
 	<div class="page">
 		<h2>Design Goals</h2>
-		<img src="../images/goals.png">
-		<p class="huge">
-			Having these use cases in mind, we can formulate clear goals for Panorama.
+		<div class="quarter">
+			<img src="../images/goals.png">
+		</div>
+		<p class="huge side">
+			Having these use cases in mind, we can extract clear goals for what Panorama should be according to this data.
 		</p>
+	</div>
+	<div class="page">
 		<div class="third">
 			<h3>Easy in, easy out</h3>
 			<p>
@@ -142,21 +147,24 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 	</div>
 </section>
 
-<a name="proposal"></a>
+<a name="sketches"></a>
 <section class="proposal">
 	<div class="page">
-		<h2>The Proposal</h2>
-		<img src="../images/sketching.png">
-		<h3>Sketches</h3>
-		<p class="huge">
+		<h2>Sketches</h2>
+		<div class="quarter">
+			<img src="../images/sketching.png">
+		</div>
+		<p class="huge side">
 			My first steps towards a solution were a series of sketches. I always try to start with smaller features and then work my way towards the big picture. That way, I can get familiar with a problem and don’t have to solve everything at once.
 		</p>
-
+	</div>
+	<div class="page">
 		SKETCHES GO HERE
 
 		<div class="third">
 			<p>
 				<strong>I quickly discarded the spatial organization that panorama currently uses.</strong> While it is easy to find a tab spatially, there is a big decision toll associated with the process of laying out the various groups on the canvas.
+			</p>
 		</div>
 
 		<div class="third">
@@ -171,41 +179,72 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 			</p>
 		</div>
 	</div>
+</section>
 
+<a name="wireframes"></a>
+<section class="wireframes">
 	<div class="page">
-		<img src="../images/wireframing.png">
-		<h3>Wireframes</h3>
-		<p class="huge">
+		<h2>Wireframes</h2>
+		<div class="quarter">
+			<img src="../images/wireframing.png">
+		</div>
+		<p class="huge side">
 			After finding a general direction with sketches, I get into the pixels with wireframes. The main point of this is that sketches can be deceitful when it comes to space. Things that look pretty in sketches often fall apart when you take actual font sizes and screen real estate into account.
 		</p>
-
-		<p>
-			Again, I try to take the fastest path towards reality. That’s why I don’t use a special wireframing tool (which would probably trick 
-			me into caring for symbols, masters and interactivity). I just use Keynote an copy &amp; paste my way towards a better solution.
-		</p>
 	</div>
 
-	WIREFRAMES HAPPEN HERE
+	<div class="gallery page" data-gallery="1">
+		<img src="../images/wireframes/wf.001.jpg">
+		<img src="../images/wireframes/wf.002.jpg">
+		<img src="../images/wireframes/wf.003.jpg">
+		<img src="../images/wireframes/wf.004.jpg">
+		<img src="../images/wireframes/wf.005.jpg">
+		<img src="../images/wireframes/final.jpg">
+	</div>
+	<div class="page">
+		<div class="half">
+			<img src="../images/wireframes/final.jpg" style="width: 100%" data-gallery="1">
+		</div>
+		<div class="half last">
+			<iframe src="http://player.vimeo.com/video/71677318?title=0&amp;byline=0&amp;portrait=0" width="503" height="377" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</div>
+	</div>
 
 	<div class="page">
-		<img src="../images/animation.png">
-		<h3>Animations</h3>
-		<p>
-			Wireframes are a good start, but they are static states with little context. That's why I sometimes, create little animations which double as half-functional prototypes – so evaluate what is happening between the panels.
-		</p>
-
-		<p>
-			In this case, I just quickly animated the transition between the regular view and the tab overview. Easy enough to do in Keynote.
-		</p>
-
-		<div class="video">
-			VIDEO EMBED CODE GOES HERE
+		<div class="half last">
+			<h3>Static Wireframes</h3>
+			<p>
+				Again, I try to take the fastest path towards reality. That’s why I don’t use a special wireframing tool (which would probably trick me into caring for symbols, masters and interactivity). I just use Keynote an copy &amp; paste my way towards a better solution.
+			</p>
+			<p>
+				As you see, the wireframes are not just a pixel version of the sketches.
+			</p>
 		</div>
+		<div class="half last">
+			<h3>Animations</h3>
+			<p>
+				Wireframes are a good start, but they are static states with little context. That's why I sometimes, create little animations which double as half-functional prototypes – so evaluate what is happening between the panels.
+			</p>
+			<p>
+				In this case, I just quickly animated the transition between the regular view and the tab overview. Easy enough to do in Keynote.
+			</p>
+		</div>
+	</div>
+</section>
 
-		<p>
-			The next step is usually a working prototype. Sometimes, if I already see visual problems looming at the horizon, I also do a little visual design to make sure that there are no deal breakers come up later on.
+
+<a name="prototype"></a>
+<section class="prototype">
+	<div class="page">
+		<h2>Prototype:<br> Because nothing beats reality</h2>
+		<div class="quarter">
+			<img src="../images/prototype.png">
+		</div>
+		<p class="huge side">
+			The first shot of this concept is ready for prime time! Combining all the observations and ideas so far, I created this little prototype. This way, we now have something that can be easily communicated and easily tested.
 		</p>
 	</div>
+
 </section>
 
 
@@ -218,5 +257,6 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 			<span><i class="icon-phone"></i> +49 151 566 78 520</span>
 			<span><i class="icon-envelope"></i> <a href="mailto:hey@philippsackl.com">hey@philippsackl.com</a></span>
 		</p>
+		<i class="icon-chevron-sign-left"></i> <a href="http://readyformozilla.com">Back to my Resumé</a>
 	</div>
 </section>

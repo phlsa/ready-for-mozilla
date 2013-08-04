@@ -250,9 +250,9 @@ nav {
   .even {
   //  background-color: #d4d0c9;
   }
-  .odd {
-    background-color: #eae5de;
-  }
+}
+.odd {
+  background-color: #eae5de;
 }
 
 .cta {
@@ -263,7 +263,7 @@ nav {
   padding-bottom: 400px;
   h2 {
     line-height: 110%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em 0 !important;
   }
   span {
     font-size: 1.5em;
@@ -290,11 +290,46 @@ nav {
     font-size: 5em;
     margin: 0;
   }
+  h2 {
+    margin: 2em 0 1em 0;
+  }
 }
 
 header.intro {
   background-color: #fff;
-  padding-bottom: 4em;
+  padding: 3em 0 4em 0;
+  text-align: center;
+  h2 {
+    margin: 0 0 1em 0;
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  a {
+    position:relative;
+    z-index: 30;
+    text-decoration: none;
+  }
+  a.btn {
+    display: inline-block;
+    width: 430px;
+    background-color: $orange;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    padding: 0.3em 0.2em;
+    margin-top: 1em;
+    span {
+      display: inline-block;
+      width: 300px;
+    }
+    i {
+      display: inline-block;
+      font-size: 3em;
+    }
+  }
 }
 
 .panorama .process {
@@ -313,7 +348,21 @@ header.intro {
   }
 }
 
+.span-two {
+  @include span-columns( 2 );
+}
+.side {
+  @include span-columns( 8 omega );
+}
+
+.gallery {
+  img {
+    position: relative;
+    width: 167px;
+  }
+}
+
 .huge {
   font-size: 2em;
-  max-width: 600px;
+  margin-top: -0.5em;
 }
