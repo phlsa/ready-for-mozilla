@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title || "Philipp is ready for Mozilla" %></title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800italic' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="stylesheets/normalize.css" rel="stylesheet">
+    <link href="stylesheets/all.css" rel="stylesheet">
+    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>

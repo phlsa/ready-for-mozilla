@@ -1,0 +1,174 @@
+---
+title: Rethinking Panorama / Philipp is ready for Mozilla
+---
+
+<header class="intro">
+	<div class="page">
+		<h1>Rethinking Panorama</h1>
+		<p class="huge">
+			Panorama (or tab groups) is a great feature. Whenever I tell someone about it, people love the idea.<br>
+			But I think it can get even better. Let me show you how.
+		</p>
+	</div>
+</header>
+
+<nav>
+	<div class="page">
+		<a href="#process">Process</a>
+		<a href="#use-cases">Use Cases</a>
+		<a href="#goals">Goals</a>
+		<a href="#proposal">Proposal</a>
+		<a href="#future">Future</a>
+	</div>
+</nav>
+
+<a name="process"></a>
+<section class="process">
+	<div class="page what-about">
+		<h2>My Process:<br> The UX Framework</h2>
+		<p>
+			There are as many design processes as there are designers out there. But when we break them down, we can see three core values of User Experience Design.
+		</p>
+
+		<div class="third">
+			It's not about technology,<br>
+			<h3>it's about people.</h3>
+		</div>
+		<div class="third">
+			It's not about process,<br>
+			<h3>it's about results.</h3>
+		</div>
+		<div class="third last">
+			It's not about getting it right on the first shot,<br>
+			<h3>it's about speed.</h3>
+		</div>
+
+		<p>
+			To stay true to these values, we don't need a rigid design process.
+		</p>
+	</div>
+
+
+	<div class="page framework">
+		<h3>We need a UX Framework.</h3>
+		<div>
+			<map id="framework-map" name="framework-map">
+				<area shape="rect" coords="28,75,175,165"  alt="Business Goals" title="Business Goals">
+				<area shape="rect" coords="29,230,176,320"  alt="User Goals" title="User Goals">
+				<area shape="rect" coords="28,385,175,475"  alt="Requirements" title="Requirements">
+				<area shape="rect" coords="217,241,364,331"  alt="Functionality" title="Functionality">
+				<area shape="rect" coords="450,85,597,175"  alt="Visuality" title="Visuality">
+				<area shape="rect" coords="478,369,625,459"  alt="Interactivity" title="Interactivity">
+				<area shape="rect" coords="387,257,534,347"  alt="Prototypes" title="Prototypes">
+				<area shape="rect" coords="726,115,873,205"  alt="Inspections" title="Inspections">
+				<area shape="rect" coords="727,348,874,438"  alt="User Tests" title="User Tests">
+			</map>
+			<img src="../images/framework.png" usemap="#framework-map">
+			<p>Move your mouse over the icons to see descriptions</p>
+		</div>
+	</div>
+</section>
+
+
+<a name="use-cases"></a>
+<section class="use-cases">
+	<div class="page">
+		<h2>Use Cases:<br> Building the right thing</h2>
+		<img src="../images/use-cases.png">
+		<p>
+			What do people actually use or want to use panorama for? Researching forums, Bugzilla, Telemetry and questioning some people around me, I have identified these use cases.
+		</p>
+		<div class="third">
+			<h3>Organize huge amounts of tabs</h3>
+			<p>
+				Users reporting this behavior mostly had permanent tab groups with permanently opened tabs. They invested time organizing those groups, so losing one of them would be unacceptable.
+			</p>
+		</div>
+		<div class="third">
+			<h3>Finding an opening tab visually</h3>
+			<p>
+				This is what most people think panorama is, when I tell them about it. The grouping feature is mostly a second thought after the »I need to find that tab with the yellow header« use case. In addition, telemetry shows that <a href="http://bit.ly/19CdB7o" target="_blank">almost 60% of people using panorama only have one tab group</a>.
+			</p>
+		</div>
+		<div class="third last">
+			<h3>Clean up tabs</h3>
+			<p>
+				When users have opened a great number of tabs, it becomes harder and harder to get rid of them. So they use Panorama to get a better overview and selectively close tabs.
+			</p>
+		</div>
+	</div>
+	<div class="page">
+		<p>
+			Notice how only one of those use cases actually utilizes the grouping functionality. The others mainly see Panorama as a tab overview and switcher.
+		</p>
+	</div>
+</section>
+
+<a name="goals"></a>
+<section class="goals">
+	<div class="page">
+		<h2>Design Goals</h2>
+		<img src="../images/goals.png">
+		<p>
+			Having these use cases in mind, we can formulate clear goals for Panorama.
+		</p>
+		<div class="third">
+			<h3>Easy in, easy out</h3>
+			<p>
+				People use panorama as a task switcher (whether that was intended or not). So getting in, finding a tab and then getting out again must be fast and easy.
+			</p>
+		</div>
+		<div class="third">
+			<h3>Don't enforce organization</h3>
+			<p>
+				Oranizing tabs is a meta work. It should be possible to do, but the focus shouldn't be the activity of oranization itself.
+			</p>
+		</div>
+		<div class="third last">
+			<h3>Manage groups effortlessly</h3>
+			<p>
+				Some people just have gigantic amounts of tabs. Those are the people who really need groups. So it would be great to provide them with a way, that makes working with many tabs just as effortless as working with a few tabs.
+			</p>
+		</div>
+	</div>
+</section>
+
+<a name="proposal"></a>
+<section class="proposal">
+	<div class="page">
+		<h2>The Proposal</h2>
+		<p>
+			My first steps towards a solution were a series of sketches. I always try to start with smaller features and then work my way towards the big picture. That way, I can get familiar with a problem and don’t have to solve everything at once.
+		</p>
+
+		<div class="third">
+			<p>
+				I quickly discarded the spatial organization that panorama currently uses. While it is easy to find a tab spatially, there is a big decision toll associated with the process of laying out the various groups on the canvas.
+		</div>
+
+		<div class="third">
+			<p>
+				<strong>I wanted to preserve the benefit of spacial recognition while getting rid of the organizational overhead. Fortunately, this can be done rather easily by laying out the groups automatically.
+			</p>
+		</div>
+
+		<div class="third">
+			<p>
+				 <strong>I also got rid of the idea that tabs in all groups must be visible all the time.</strong> This would only be useful, if people switched frequently switched between groups. While I couldn’t find any hard data on this behavior, people on various forums were mostly talking about how they use tab groups as workspaces. This, combined with the fact that most people have only one group, means that most switching happens within a group and not between them.
+			</p>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="cta">
+	<div class="page">
+		<p>Alright, Mozilla. I already know you, now you know me too.</p>
+		<h2>Let's do this.<br> Together.</h2>
+		<p>
+			<span><i class="icon-phone"></i> +49 151 566 78 520</span>
+			<span><i class="icon-envelope"></i> <a href="mailto:hey@philippsackl.com">hey@philippsackl.com</a></span>
+		</p>
+	</div>
+</section>
