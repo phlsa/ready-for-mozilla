@@ -339,6 +339,77 @@ header.intro {
 
 .framework {
   text-align: center;
+  h3 {
+    font-size: 3em;
+    margin-top: -0.3em;
+  }
+  p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .framework-graphic {
+    position: relative;
+  }
+  .descr {
+    width: 200px;
+    padding: 20px 16px;
+    text-align: left;
+    position: absolute;
+    background-color: #eae5de;
+    border: 3px solid #fff;
+    top:0;
+    display: none;
+    @include box-shadow( 0 0 14px rgba(0,0,0,.6) );
+  }
+  .arrow-left:after, .arrow-left:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .arrow-left:after {
+    border-color: rgba(234, 229, 222, 0);
+    border-right-color: #eae5de;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .arrow-left:before {
+    border-color: rgba(0,0,0,0);
+    border-right-color: #fff;
+    border-width: 24px;
+    top: 50%;
+    margin-top: -24px;
+  }
+
+  .arrow-right:after, .arrow-right:before {
+    left: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .arrow-right:after {
+    border-color: rgba(234, 229, 222, 0);
+    border-left-color: #eae5de;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .arrow-right:before {
+    border-color: rgba(0,0,0,0);
+    border-left-color: #fff;
+    border-width: 24px;
+    top: 50%;
+    margin-top: -24px;
+  }
 }
 .what-about {
   margin-bottom: 6em;

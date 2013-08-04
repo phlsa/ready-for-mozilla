@@ -27,4 +27,12 @@ $( document ).ready( function() {
 		$('img[data-gallery='+g+']').attr( 'src', url );
 		console.log( $('img[data-gallery="'+g+'""]') );
 	});
+
+	$('area').on('mouseover', function( e ) {
+		var id = $(e.currentTarget).attr('data-popup');
+		$('div.descr.'+id).show();
+	});
+	$('area').on('mouseout', function( e ) {
+		$('div.descr').hide();
+	});
 });
