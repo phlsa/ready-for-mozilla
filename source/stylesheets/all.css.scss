@@ -294,6 +294,11 @@ nav {
 
 header.intro {
   background-color: #fff;
+  padding-bottom: 4em;
+}
+
+.panorama .process {
+  margin-top: 10em;
 }
 
 .framework {
@@ -306,4 +311,9 @@ header.intro {
     padding: 0;
     font-size: 2em;
   }
+}
+
+.huge {
+  font-size: 2em;
+  max-width: 600px;
 }
