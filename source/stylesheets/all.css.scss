@@ -335,6 +335,9 @@ header.intro {
 
 .panorama .process {
   margin-top: 10em;
+  h3 {
+    font-weight: 700;
+  }
 }
 
 .framework {
@@ -342,6 +345,7 @@ header.intro {
   h3 {
     font-size: 3em;
     margin-top: -0.3em;
+    font-weight: 300!important;
   }
   p {
     max-width: 800px;
