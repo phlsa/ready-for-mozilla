@@ -312,24 +312,27 @@ header.intro {
     z-index: 30;
     text-decoration: none;
   }
-  a.btn {
+}
+
+a.btn {
+  position: relative;
+  display: inline-block;
+  width: 430px;
+  background-color: $orange;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #fff;
+  padding: 0.3em 0.2em;
+  margin-top: 1em;
+  text-decoration: none;
+  span {
     display: inline-block;
-    width: 430px;
-    background-color: $orange;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff;
-    padding: 0.3em 0.2em;
-    margin-top: 1em;
-    span {
-      display: inline-block;
-      width: 300px;
-    }
-    i {
-      display: inline-block;
-      font-size: 3em;
-    }
+    width: 300px;
+  }
+  i {
+    display: inline-block;
+    font-size: 3em;
   }
 }
 
@@ -424,6 +427,10 @@ header.intro {
   }
 }
 
+.sketch {
+  border: 4px solid #cbc7c0;
+}
+
 .span-two {
   @include span-columns( 2 );
 }
@@ -436,6 +443,10 @@ header.intro {
     position: relative;
     width: 167px;
   }
+}
+
+.prototype {
+  margin-bottom: 8em;
 }
 
 .huge {
