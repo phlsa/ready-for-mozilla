@@ -26,6 +26,7 @@ a {
 .page {
   @include container;
   max-width: 1024px;
+  min-width: 1024;
 }
 
 .header-container {
