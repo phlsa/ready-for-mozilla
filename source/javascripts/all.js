@@ -21,13 +21,6 @@ $( document ).ready( function() {
 		}, 1000);
 	});
 
-	$('.gallery img').on('mouseover', function( e ) {
-		var g = $(e.currentTarget).closest('.gallery').attr('data-gallery');
-		var url = $(e.currentTarget).attr('src');
-		$('img[data-gallery='+g+']').attr( 'src', url );
-		console.log( $('img[data-gallery="'+g+'""]') );
-	});
-
 	$('area').on('mouseover', function( e ) {
 		var id = $(e.currentTarget).attr('data-popup');
 		$('div.descr.'+id).show();

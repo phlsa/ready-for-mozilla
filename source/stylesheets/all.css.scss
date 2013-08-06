@@ -482,14 +482,46 @@ a.btn {
 }
 
 .gallery {
+  position: relative;
+  margin-top: 6em;
   img {
-    position: relative;
-    width: 167px;
+    position: absolute;
+    top: -90px;
+    left: 30px;
+  }
+}
+
+.big-image {
+  position: relative;
+  z-index: 100;
+  img, iframe {
+    @include box-shadow( 0 3px 10px rgba(0,0,0,0.7) );
   }
 }
 
 .prototype {
   margin-bottom: 8em;
+}
+
+.recap {
+  margin-top: 5em;
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  ul {
+    font-size: 1.5em;
+    line-height: 170%;
+    list-style: none;
+    width: 70%;
+    margin-left: 15%;
+    li {
+      font-weight: 800;
+    }
+  }
 }
 
 .huge {
