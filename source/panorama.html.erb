@@ -25,6 +25,24 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 	</div>
 </nav>
 
+<section class="why">
+	<div class="page">
+		<h2>Why change it?</h2>
+		<div class="half">
+			<h3>It sets the wrong priorities</h3>
+			<p>
+				The current design focuses on the task of organization, which is meta work. Instead, we should take that burden from the user and enforce as little organization as possible – all while maintaining a clear mental model.
+			</p>
+		</div>
+		<div class="half">
+			<h3>It is hard to access</h3>
+			<p>
+				Right now there are two ways to access panorama: clicking a small icon and using a keyboard shortcut. Especially when the main activity becomes is tab switching, that is probably not enough.
+			</p>
+		</div>
+	</div>
+</section>
+
 <a name="process"></a>
 <section class="process">
 	<div class="page what-about">
@@ -55,15 +73,15 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 		<h3>We need a UX Framework.</h3>
 		<div class="framework-graphic">
 			<map id="framework-map" name="framework-map">
-				<area shape="rect" coords="28,75,175,165"  alt="Business Goals" title="Business Goals" data-popup="d-business-goals">
-				<area shape="rect" coords="29,230,176,320"  alt="User Goals" title="User Goals" data-popup="d-user-goals">
-				<area shape="rect" coords="28,385,175,475"  alt="Requirements" title="Requirements" data-popup="d-requirements">
-				<area shape="rect" coords="217,241,364,331"  alt="Functionality" title="Functionality" data-popup="d-functionality">
-				<area shape="rect" coords="450,85,597,175"  alt="Visuality" title="Visuality" data-popup="d-visuality">
-				<area shape="rect" coords="478,369,625,459"  alt="Interactivity" title="Interactivity" data-popup="d-interactivity">
-				<area shape="rect" coords="387,257,534,347"  alt="Prototypes" title="Prototypes" data-popup="d-prototypes">
-				<area shape="rect" coords="726,115,873,205"  alt="Inspections" title="Inspections" data-popup="d-inspections">
-				<area shape="rect" coords="727,348,874,438"  alt="User Tests" title="User Tests" data-popup="d-user-tests">
+				<area shape="rect" coords="28,75,175,165"     data-popup="d-business-goals">
+				<area shape="rect" coords="29,230,176,320"    data-popup="d-user-goals">
+				<area shape="rect" coords="28,385,175,475"    data-popup="d-requirements">
+				<area shape="rect" coords="217,241,364,331"   data-popup="d-functionality">
+				<area shape="rect" coords="450,85,597,175"    data-popup="d-visuality">
+				<area shape="rect" coords="478,369,625,459"   data-popup="d-interactivity">
+				<area shape="rect" coords="387,257,534,347"   data-popup="d-prototypes">
+				<area shape="rect" coords="726,115,873,205"   data-popup="d-inspections">
+				<area shape="rect" coords="727,348,874,438"   data-popup="d-user-tests">
 			</map>
 			<img src="../images/framework.png" usemap="#framework-map">
 
@@ -134,13 +152,13 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 		<div class="third">
 			<h3>Finding an opening tab visually</h3>
 			<p>
-				This is what most people think panorama is, when I tell them about it. The grouping feature is mostly a second thought after the »I need to find that tab with the yellow header« use case. In addition, telemetry shows that <a href="http://bit.ly/19CdB7o" target="_blank">almost 60% of people using panorama only have one tab group</a>.
+				This is what most people think panorama is, when I tell them about it. The grouping feature is mostly a second thought after the »I&nbsp;need to find that tab with the yellow header« use case. In addition, telemetry shows that <a href="http://bit.ly/19CdB7o" target="_blank">almost 60% of people using panorama only have one tab group</a>.
 			</p>
 		</div>
 		<div class="third last">
 			<h3>Clean up tabs</h3>
 			<p>
-				When users have opened a great number of tabs, it becomes harder and harder to get rid of them. So they use Panorama to get a better overview and selectively close tabs.
+				When users have opened a great number of tabs, it becomes harder and harder to get rid of the ones they don't need anymore. So they use Panorama to get a better overview and selectively close tabs.
 			</p>
 		</div>
 	</div>
@@ -209,7 +227,7 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 
 		<div class="third">
 			<p>
-				<strong>I wanted to preserve the benefit of spacial recognition while getting rid of the organizational overhead.</strong> Fortunately, this can be done rather easily by laying out the groups automatically.
+				<strong>I wanted to preserve the benefit of spacial recognition while getting rid of the organizational overhead.</strong> Fortunately, this can be done rather easily by laying out the groups automatically (and in just one dimension).
 			</p>
 		</div>
 
@@ -229,7 +247,7 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 			<img src="../images/wireframing.png">
 		</div>
 		<p class="huge side">
-			After finding a general direction with sketches, I get into the pixels with wireframes. The main point of this is that sketches can be deceitful when it comes to space. Things that look pretty in sketches often fall apart when you take actual font sizes and screen real estate into account.
+			After finding a general direction with sketches, I get into the pixels with wireframes. The main point of this is that sketches can be deceitful when it comes to space and font sizes. Wireframes let me see if everything still fits.
 		</p>
 	</div>
 
@@ -246,7 +264,7 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 			<img src="../images/wireframes/final.jpg" style="width: 100%" data-gallery="1">
 		</div>
 		<div class="half last">
-			<iframe src="http://player.vimeo.com/video/71677318?title=0&amp;byline=0&amp;portrait=0" width="503" height="377" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<iframe src="http://player.vimeo.com/video/71677318?title=0&amp;byline=0&amp;portrait=0&amp;loop=1" width="503" height="377" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></iframe>
 		</div>
 	</div>
 
@@ -257,7 +275,7 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 				Again, I try to take the fastest path towards reality. That’s why I don’t use a special wireframing tool (which would probably trick me into caring for symbols, masters and interactivity). I just use Keynote an copy &amp; paste my way towards a better solution.
 			</p>
 			<p>
-				As you see, the wireframes are not just a pixel version of the sketches.
+				As you see, the wireframes are not just a pixel version of the sketches. Some new ideas only come to mind when getting down to pixels.
 			</p>
 		</div>
 		<div class="half last">
@@ -299,6 +317,7 @@ title: Rethinking Panorama / Philipp is ready for Mozilla
 		<p>
 			<span><i class="icon-phone"></i> +49 151 566 78 520</span>
 			<span><i class="icon-envelope"></i> <a href="mailto:hey@philippsackl.com">hey@philippsackl.com</a></span>
+			<span><i class="icon-skype"></i> philippsackl</span>
 		</p>
 		<i class="icon-chevron-sign-left"></i> <a href="http://readyformozilla.com">Back to my Resumé</a>
 	</div>

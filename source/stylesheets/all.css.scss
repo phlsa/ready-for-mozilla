@@ -17,6 +17,7 @@ $orange: #ff6d16;
 
 body {
   background-color: #f2eee8;
+  line-height: 170%;
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 .page {
   @include container;
   max-width: 1024px;
-  min-width: 1024;
+  min-width: 1024px;
 }
 
 .header-container {
@@ -93,6 +94,7 @@ h2 {
   margin: 0 auto 80px auto;
   h3 {
     font-size: 2em;
+    line-height: 130%;
     text-align: center;
   }
   p {
@@ -109,11 +111,17 @@ nav {
   padding: 20px 0;
   a {
     display: inline-block;
-    margin: 0 1.7em;
+    padding: 0 0.1em;
+    margin: 0 1.6em;
     font-weight: 800;
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
+    border-bottom: 2px solid rgba(255,255,255,0);
+    @include transition( border-color 0.3s ease );
+    &:hover {
+      border-color: rgba(255,255,255,0.8);
+    }
   }
 }
 .fixed {
@@ -187,6 +195,7 @@ nav {
     div {
       color: #333;
       font-size: 120px;
+      line-height:130%;
       font-weight: 800 !important;
       font-style: italic;
       @include transform( translate( 2px, -2px ) );
@@ -205,8 +214,8 @@ nav {
   .page {
     margin-top: 30px;
     ol {
-      @include span-columns( 8, 12 );
-      @include prefix( 2 );
+      width: 60%;
+      margin-left: 6%;
       p {
         font-size: 1.2em;
       }
@@ -220,26 +229,44 @@ nav {
     }
   }
 
+  &.page {
+    min-width: 850px;
+  }
+
   a {
     color: rgba(255,255,255,0.7);
   }
 }
 
 
+
+
 .index .process {
   margin-top: 8em;
+  text-align: center;
   p {
     @include span-columns( 8, 12 );
+    @include prefix( 2 );
   }
-  a.watch {
-    display: inline-block;
-    width: 600px;
-    text-transform: uppercase;
-    font-size: 3em;
-    line-height: 110%;
-    font-weight: 900;
-    font-style: italic;
-    text-decoration: none;
+  .pano-section {
+    position: relative;
+    img {
+      position: absolute;
+      right: -220px;
+      top: -80px;
+    }
+    .pano-link {
+      margin-left: -150px;
+      i {
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.8);
+        @include transform( scale( 2 ) );
+      }
+      margin-bottom: 1em;
+    }
+  }
+
+  .other-projects {
+    margin-top: 3em;
   }
 }
 
@@ -270,9 +297,10 @@ nav {
   span {
     font-size: 1.5em;
     display: inline-block;
+    margin-right: 3em;
   }
   span:last-child {
-    margin-left: 3em;
+    margin-right: 0;
   }
   a {
     color: #fff;
@@ -321,12 +349,14 @@ a.btn {
   width: 430px;
   background-color: $orange;
   font-size: 2em;
+  line-height: 130%;
   text-transform: uppercase;
   font-style: italic;
   color: #fff;
   padding: 0.3em 0.2em;
   margin-top: 1em;
   text-decoration: none;
+  @include transition( background-color 0.3s ease );
   span {
     display: inline-block;
     width: 300px;
@@ -335,10 +365,22 @@ a.btn {
     display: inline-block;
     font-size: 3em;
   }
+  &:hover {
+    background-color: #fc4d07;
+  }
+}
+
+.why {
+  background-color: #e2ddd6;
+  h2 {
+    margin-top: 0;
+    padding-top: 2.5em;
+  }
+  padding-bottom: 5em;
 }
 
 .panorama .process {
-  margin-top: 10em;
+  margin-top: 6em;
   h3 {
     font-weight: 700;
   }
@@ -452,5 +494,6 @@ a.btn {
 
 .huge {
   font-size: 2em;
+  line-height: 140%;
   margin-top: -0.5em;
 }
