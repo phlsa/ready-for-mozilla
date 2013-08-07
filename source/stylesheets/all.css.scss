@@ -112,7 +112,7 @@ nav {
   a {
     display: inline-block;
     padding: 0 0.1em;
-    margin: 0 1.6em;
+    margin: 0 1.25em;
     font-weight: 800;
     color: #fff;
     text-decoration: none;
@@ -329,6 +329,13 @@ header.intro {
   background-color: #fff;
   padding: 3em 0 4em 0;
   text-align: center;
+  h1 {
+    small {
+      display: block;
+      font-size: 50%;
+      margin-top: -0.4em;
+    }
+  }
   h2 {
     margin: 0 0 1em 0;
   }
@@ -371,10 +378,10 @@ a.btn {
 }
 
 .why {
-  background-color: #e2ddd6;
+  background-color: #fff;
   h2 {
     margin-top: 0;
-    padding-top: 2.5em;
+    padding-top: 1.5em;
   }
   padding-bottom: 5em;
 }
