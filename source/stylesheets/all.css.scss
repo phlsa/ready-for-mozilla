@@ -258,7 +258,7 @@ nav {
     .pano-link {
       margin-left: -150px;
       i {
-        text-shadow: 2px 2px 0 rgba(0,0,0,0.8);
+        text-shadow: 1px 2px 0 rgba(0,0,0,0.7);
         @include transform( scale( 2 ) );
       }
       margin-bottom: 1em;
