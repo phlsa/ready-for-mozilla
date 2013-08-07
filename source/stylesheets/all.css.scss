@@ -493,7 +493,7 @@ a.btn {
 
 .big-image {
   position: relative;
-  z-index: 100;
+  z-index: 80;
   img, iframe {
     @include box-shadow( 0 3px 10px rgba(0,0,0,0.7) );
   }
