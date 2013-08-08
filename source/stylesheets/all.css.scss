@@ -112,7 +112,7 @@ nav {
   a {
     display: inline-block;
     padding: 0 0.1em;
-    margin: 0 1.25em;
+    margin: 0 1.1em;
     font-weight: 800;
     color: #fff;
     text-decoration: none;
@@ -376,6 +376,7 @@ a.btn {
   span {
     display: inline-block;
     width: 300px;
+    font-weight: 800;
   }
   i {
     display: inline-block;
@@ -534,9 +535,6 @@ a.btn {
     list-style: none;
     width: 70%;
     margin-left: 15%;
-    li {
-      font-weight: 800;
-    }
   }
 }
 
