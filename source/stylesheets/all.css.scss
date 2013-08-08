@@ -330,6 +330,7 @@ header.intro {
   padding: 3em 0 4em 0;
   text-align: center;
   h1 {
+    margin-bottom: 0!important;
     small {
       display: block;
       font-size: 50%;
@@ -339,14 +340,22 @@ header.intro {
   h2 {
     margin: 0 0 1em 0;
   }
-  p {
-    max-width: 800px;
-    margin: 0 auto;
-  }
   a {
     position:relative;
     z-index: 30;
     text-decoration: none;
+  }
+}
+.video {
+  padding-top: 1em;
+  text-align: center;
+  .centered-video {
+    width: 800px;
+    margin: 0 auto;
+  }
+  p {
+    max-width: 800px;
+    margin: 1em auto;
   }
 }
 
@@ -397,7 +406,7 @@ a.btn {
   text-align: center;
   h3 {
     font-size: 3em;
-    margin-top: -0.3em;
+    margin-top: 0;
     font-weight: 300!important;
   }
   p {
